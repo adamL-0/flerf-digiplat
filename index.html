@@ -1,25 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title> Flerf Website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A short description." />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Website</h1>
-    </header>
-    <main>
-      <section>
-        <h2>Welcome</h2>
-        <p>Main content area</p>
-      </section>
-    </main>
-    <footer>
-      <p>&copy; 2026 Your Name. All rights reserve.</p>
-    </footer>
-    <script src="js/main.js">
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLERF</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>FLERF</h1>
+    <div class="menu-icon" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="dropdownMenu" class="dropdown">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <button onclick="toggleSubMenu(event)">Topics ▾</button>
+      <div id="subMenu" class="submenu">
+        <a href="#">Cosmology</a>
+        <a href="#">NASA</a>
+        <a href="#">Scientism</a>
+        <a href="#">Water</a>
+      </div>
+      <a href="#">Links</a>
+    </div>
+  </header>
+  
+  <main>
+    <section id="home" class="dictionary-entry">
+      <h2 class="word">flerf</h2>
+      <p>noun</p>
+      <p class="definition">
+        1. A flat earther. A person who has come to
+        the conclusion that the earth is a level
+        stationary plane. 
+      </p>
+    </section>
+
+    <section id="about" style="display:none;">
+      <h2>About</h2>
+      <p>FLERF is an interactive platform for exploring science and ideas.</p>
+    </section>
+
+    <section id="cosmology" style="display:none;">
+      <h2>Cosmology</h2>
+      <p>Explore the fascinating science of the universe.</p>
+    </section>
+
+    <section id="nasa" style="display:none;">
+      <h2>NASA</h2>
+      <p>Not A Space Agency</p>
+    </section>
+    
+    <section id="scientism" style="display:none;">
+      <h2>Scientism</h2>
+      <p>-</p>
+    </section>
+
+    <section id="water" style="display:none;">
+      <h2>Water</h2>
+      <p>Discover the properties and importance of water.</p>
+    </section>
+
+    <section id="links" style="display:none;">
+      <h2>Links</h2>
+      <p>Here are some useful resources related to FLERF.</p>
+    </section>
+  </main>
+
+  <script src="assets/js/menu.js"></script>
+</body>
 </html>
