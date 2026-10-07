@@ -82,7 +82,7 @@ h1 {
   display: flex;
 }
 
-.centered_img {
+.centered-img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
